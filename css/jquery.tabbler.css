@@ -1,0 +1,22 @@
+﻿#nav li.active,
+#slideshow li.active
+{
+    background-color: #222;
+    color: #fff;
+}
+#nav li.active a,
+#slideshow li.active a
+{
+    color: #ccc !important;
+}
+#nav .tabbler-panel
+{
+    background-color: #222;
+    box-shadow: 0px 5px 5px -5px #000;
+    color: #fff;
+}
+#nav .tabbler-wrapper
+{
+    overflow: hidden;
+    padding: 1em; /* 16px */
+}

@@ -1,0 +1,455 @@
+﻿@import url('../fonts/DejaVuSerif.css');
+html
+{
+    font-family: verdana, arial, sans-serif;
+}
+a
+{
+    text-decoration: none;
+}
+em
+{
+    font-style: italic;
+}
+strong
+{
+    font-weight: bold;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+    margin-top: 1em; /* Varies */
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child
+{
+    margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: DejaVuSerifBook, sylfaen, times, serif;
+}
+h1
+{
+    font-size: 2em; /* 32px */
+}
+h2
+{
+    font-size: 1.75em; /* 28px */
+}
+h3
+{
+    font-size: 1.5em; /* 24px */
+}
+h4
+{
+    font-size: 1.25em; /* 20px */
+}
+h5
+{
+    font-size: 1em; /* 16px */
+}
+h6
+{
+    font-size: 0.75em; /* 12px */
+}
+#video-player
+{
+    background: center center no-repeat url('../img/ajax-loader.gif');
+    display: none;
+    height: 50%;
+    position: fixed;
+    width: 50%;
+    z-index: 102;
+}
+#video-player .close-icon
+{
+    cursor: pointer;
+    height: 3.13em; /* 50px */
+    position: absolute;
+    width: 3.13em; /* 50px */
+}
+#video-player iframe
+{
+    height: 100%;
+    width: 100%;
+}
+#video-dimmer
+{
+    background: url('../img/black-90p.png');
+    display: none;
+    height: 100%;
+    position: fixed;
+    width: 100%;
+    z-index: 101;
+}
+#header
+{
+    box-shadow: 0px 5px 5px -5px #000;
+    padding-bottom: 2em; /* 32px */
+}
+#header img
+{
+    height: 6.25em; /* 100px */
+    width: 6.25em; /* 100px */
+}
+#header h1
+{
+    display: inline;
+    font-size: 8em; /* 128px */
+}
+#nav
+{
+    margin-top: -2em; /* -32px */
+}
+#slideshow
+{
+    margin-top: 1em; /* 16px */
+    min-height: 17.63em; /* 282px */
+}
+#nav li,
+#slideshow li
+{
+    display: inline-block;
+}
+#nav li a,
+#slideshow li a
+{
+    display: inline-block;
+    padding: 0.5em; /* 8px */
+}
+#nav a,
+#slideshow a
+{
+    font-family: DejaVuSerifCondensed, sylfaen, times, serif;
+    text-transform: uppercase;
+}
+#nav p
+{
+    font-size: 0.75em; /* 12px */
+    line-height: 1.5em; /* 24px */
+}
+#slideshow ul
+{
+    text-align: right;
+}
+#nav-1,
+#nav-2,
+#nav-3,
+#nav-4
+{
+    display: none;
+}
+#main h1
+{
+    font-size: 6em; /* 96px */
+    margin-top: 0.5em; /* 48px */
+    text-align: center;
+    text-transform: uppercase;
+}
+#main h2
+{
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    font-size: 3em; /* 48px */
+    padding: 1em; /* 48px */
+    text-align: center;
+    text-transform: uppercase;
+}
+#main h3
+{
+    margin-top: 1em; /* 24px */
+}
+#main p
+{
+    line-height: 2em; /* 32px */
+    margin-top: 1em; /* 16px */
+    text-align: justify;
+}
+#main .menu
+{
+    z-index: 1;
+}
+#main .menu ul
+{
+    box-shadow: 0px 5px 5px -5px #000;
+    overflow: hidden;
+}
+#main .menu li
+{
+    border-bottom: 3px solid;
+    display: table;
+    float: left;
+    height: 4em; /* 64px */
+    width: 33.33%;
+}
+#main .menu li.short
+{
+    width: 25%;
+}
+#main .menu li.active
+{
+    background: bottom center no-repeat url('../img/arrow.png');
+}
+#main .menu a
+{
+    display: table-cell;
+    font-family: DejaVuSerifCondensed, sylfaen, times, serif;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+#main .content
+{
+    overflow: hidden;
+}
+#main .content .button
+{
+    font-family: DejaVuSerifCondensed, sylfaen, times, serif;
+    text-transform: uppercase;
+}
+#sermons
+{
+    min-height: 18.75em; /* 300px */
+    overflow: hidden;
+}
+#sermons h3
+{
+    margin-top: 1em; /* 24px */
+}
+#footer
+{
+    margin-top: 4em; /* 64px */
+    overflow: hidden;
+    padding-bottom: 1em; /* 16px */
+    padding-top: 1em; /* 16px */
+}
+#footer h3
+{
+    margin-bottom: 0.5em; /* 12px */
+    text-transform: uppercase;
+}
+#footer p
+{
+    font-size: 0.75em; /* 12px */
+    line-height: 1.5em; /* 24px */
+    margin: 0;
+}
+.video-player-play
+{
+    display: block;
+    margin-top: 1em; /* 16px */
+    position: relative;
+}
+.video-player-play .title
+{
+    font-family: DejaVuSerifCondensed, sylfaen, times, serif;
+    text-transform: uppercase;
+}
+.video-player-play .desc
+{
+    font-size: 0.75em; /* 12px */
+}
+.video-player-play .play-icon
+{
+    height: 3.13em; /* 50px */
+    left: 4.69em; /* 75px */
+    position: absolute;
+    top: 3.13em; /* 50px */
+    width: 3.13em; /* 50px */
+}
+.button
+{
+    display: inline-block;
+    padding: 0.5em; /* 6px */
+}
+
+/* Grid layout */
+/*
+.container is 909px wide because the Vimeo thumbnails are 200px wide each.
+We want the Vimeo thumbnails to be displayed in a 1 x 4 (row x column) configuration,
+with room for margin in between.
+If each column is 25%, then that leaves no room for margin.
+If each column is 22%, then that leaves 4% room for margin, since:
+
+     22%  +  4%  +  22%  +  4%  +  22%  +  4%  +  22%  = 100%
+
+This gives us a column width of appx. 200px and a margin width of appx. 36px:
+
+    200px + 36px + 200px + 36px + 200px + 36px + 200px = 908px
+
+We settle on 909px to accommodate for rounding error.
+The reason we don't just scale up the Vimeo thumbnails is so we don't lose quality.
+*/
+.container
+{
+    margin: auto;
+    width: 56.81em; /* 909px */
+}
+.section
+{
+    float: left;
+    margin-left: 5%;
+    width: 30%;
+}
+.section.long
+{
+    margin-left: 4%;
+    width: 48%;
+}
+.section.short
+{
+    margin-left: 4%;
+    width: 22%;
+}
+.section.whole
+{
+    margin-left: 0;
+    width: 100%;
+}
+.section:first-child,
+.section.whole + .section,
+h1 + .section,
+h2 + .section,
+h3 + .section,
+h4 + .section,
+h5 + .section,
+h6 + .section,
+p + .section
+{
+    margin-left: 0 !important;
+}
+
+/* Text colors */
+#header,
+#footer
+{
+    color: #fff;
+}
+
+/* Link colors */
+#header a,
+#main .menu a,
+#main .button,
+#footer a
+{
+    color: #ccc !important;
+}
+#nav .button,
+#nav li a,
+#slideshow li a,
+#main a,
+#sermons a
+{
+    color: #666 !important;
+}
+
+/* Background colors */
+#video-player,
+#header,
+#main .menu ul,
+#footer
+{
+    background-color: #000;
+}
+#nav li,
+#nav .button,
+#slideshow li
+{
+    background-color: #ccc;
+}
+#main h2
+{
+    background-color: #eee;
+}
+#main .menu li.active,
+#main .button
+{
+    background-color: #222;
+}
+
+/* Border colors */
+#main h2
+{
+    border-color: #000;
+}
+#main .menu li
+{
+    border-color: #ccc;
+}
+#main .menu li.active
+{
+    border-color: #fff;
+}
+
+/* IE7 fixes */
+/* http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ */
+.ie7 a
+{
+    cursor: pointer;
+}
+.ie7 h1,
+.ie7 h2,
+.ie7 h3,
+.ie7 h4,
+.ie7 h5,
+.ie7 h6
+{
+    font-weight: normal;
+}
+.ie7 #header
+{
+    height: 10em; /* 160px */
+    margin-top: -1em; /* -16px */
+}
+.ie7 #main .menu a
+{
+    display: block;
+    line-height: normal;
+    margin-top: 1.38em; /* 22px */
+}
+.ie7 #nav li,
+.ie7 #slideshow li
+{
+    display: inline;
+    margin-left: 0.25em;
+}
+
+/* Responsive design */
+@media (max-width: 909px)
+{
+    html
+    {
+        font-size: 0.88em; /* 14px */
+    }
+    img
+    {
+        max-width: 100%;
+    }
+}
+@media (max-width: 799px)
+{
+    html
+    {
+        font-size: 0.75em; /* 12px */
+    }
+    img
+    {
+        max-width: 100%;
+    }
+}

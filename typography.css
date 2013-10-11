@@ -1,0 +1,60 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p
+{
+    margin-top: 1em; /* Varies */
+}
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child,
+p:first-child
+{
+    margin-top: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-family: sylfaen, serif;
+    font-weight: normal;
+}
+h1
+{
+    font-size: 3.2em; /* 32px */
+}
+h2
+{
+    font-size: 2.8em; /* 28px */
+}
+h3
+{
+    font-size: 2.4em; /* 24px */
+}
+h4
+{
+    font-size: 2em; /* 20px */
+}
+h5
+{
+    font-size: 1.6em; /* 16px */
+}
+h6
+{
+    font-size: 1.2em; /* 12px */
+}
+p
+{
+    font-family: verdana, arial, sans-serif;
+    font-size: 1.6em; /* 16px */
+    line-height: 2em; /* 32px */
+}
